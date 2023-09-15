@@ -1,0 +1,98 @@
+:root{
+    --colorG: rgb(92, 89, 89);
+    --colorW: white;
+    --colorgr: rgb(94, 93, 93);
+
+}
+
+body{
+    font-family: 'Lato';
+    background-color: var(--colorG);
+    color: var(--colorW);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content--add-item{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#input-new-task,
+#btn-new-task{
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+
+}
+
+#input-new-task{
+    width: 20rem;
+    border-radius: 1rem;
+}
+
+#btn-new-task{
+    color: var(--colorgr);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .4s;
+
+}
+
+#btn-new-task:hover{
+    background-color: rgb(44, 44, 44);
+}
+
+#to-do-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+}
+
+#to-do-list li{
+    list-style-type: none;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+}
+
+#to-do-list li:hover{
+    background-color: rgb(46, 46, 46);
+    transition: .4s;
+    border-radius: 1rem;
+    padding-left: 1rem ;
+}
+
+#btn-ok{
+    border: none;
+    background-color: rgb(47, 184, 29);
+    color: white;
+    padding: .4rem .8rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#btn-ok:hover{
+    background-color: rgb(3, 88, 3);
+}
